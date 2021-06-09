@@ -18,12 +18,15 @@ class PlayState extends FlxState
 	var note:FlxSprite;
 
 	var grpRings:FlxTypedGroup<Rings>;
+	
+	var ringCollected:Bool = false;
 
 	// var myAwesomeArray:Array<
 
 	override public function create()
 	{
 		trace('hello world!');
+		// hi
 
 		var myFrames:Array<Int> = [0, 1, 2];
 
@@ -104,6 +107,7 @@ class PlayState extends FlxState
 	function playerOverlapsRings(gamer:FlxSprite, daRing:Rings)
 	{
 		daRing.kill();
+		FlxG.sound.play("assets/sounds/daRing.wav");
 	}
 
 	function movement():Void
@@ -130,6 +134,12 @@ class PlayState extends FlxState
 		else
 		{
 			box.angularAcceleration = 0;
+		}
+		
+		if (box.x > FlxG.height)
+		{
+			FlxG.resetState();
+			trace("you died lmfao noob");
 		}
 	}
 
