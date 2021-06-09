@@ -90,6 +90,8 @@ class PlayState extends FlxState
 		}
 
 		movement();
+
+		// awesome comment
 	}
 
 	// HOMEWORK
@@ -133,8 +135,6 @@ class PlayState extends FlxState
 
 	function moveBox(xPosition:Float = 0)
 	{
-		// trace(xPosition);
-		// box.x += xPosition;
 		box.velocity.x = xPosition;
 	}
 }
