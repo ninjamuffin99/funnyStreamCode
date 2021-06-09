@@ -4,6 +4,7 @@ import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
+import flixel.text.FlxText;
 import flixel.addons.editors.ogmo.FlxOgmo3Loader;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.tile.FlxTilemap;
@@ -18,6 +19,7 @@ class PlayState extends FlxState
 	var note:FlxSprite;
 
 	var grpRings:FlxTypedGroup<Rings>;
+	var ringCount:Int = 0;
 
 	// var myAwesomeArray:Array<
 
@@ -34,6 +36,11 @@ class PlayState extends FlxState
 		bg.setGraphicSize(FlxG.width, FlxG.height);
 		bg.updateHitbox();
 		add(bg);
+		
+		var ringText = new FlxText(5, 20, 0, "Rings: " + ringCount, 12);
+		ringText.scrollFactor.set();
+		ringText.setFormat("", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		add(ringText);
 
 		map = new FlxOgmo3Loader('assets/data/greenHillzone.ogmo', 'assets/data/greenhillAct1.json');
 		walls = map.loadTilemap('assets/images/tiles.png', 'walls');
@@ -106,6 +113,7 @@ class PlayState extends FlxState
 	{
 		daRing.kill();
 		FlxG.sound.play("assets/sounds/daRing.mp3");
+		ringCount++;
 	}
 
 	function movement():Void
