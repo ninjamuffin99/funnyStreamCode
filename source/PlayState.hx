@@ -18,8 +18,6 @@ class PlayState extends FlxState
 	var note:FlxSprite;
 
 	var grpRings:FlxTypedGroup<Rings>;
-	
-	var ringCollected:Bool = false;
 
 	// var myAwesomeArray:Array<
 
@@ -107,7 +105,7 @@ class PlayState extends FlxState
 	function playerOverlapsRings(gamer:FlxSprite, daRing:Rings)
 	{
 		daRing.kill();
-		FlxG.sound.play("assets/sounds/daRing.wav");
+		FlxG.sound.play("assets/sounds/daRing.mp3");
 	}
 
 	function movement():Void
