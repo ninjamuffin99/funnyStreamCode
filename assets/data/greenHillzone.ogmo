@@ -1,0 +1,115 @@
+{
+  "name": "Sonic Mania 2",
+  "ogmoVersion": "3.4.0",
+  "levelPaths": ["."],
+  "backgroundColor": "#282c34ff",
+  "gridColor": "#3c4049cc",
+  "anglesRadians": true,
+  "directoryDepth": 5,
+  "layerGridDefaultSize": {"x": 8, "y": 8},
+  "levelDefaultSize": {"x": 320, "y": 240},
+  "levelMinSize": {"x": 640, "y": 480},
+  "levelMaxSize": {"x": 4096, "y": 4096},
+  "levelValues": [],
+  "defaultExportMode": ".json",
+  "compactExport": false,
+  "externalScript": "",
+  "playCommand": "",
+  "entityTags": [],
+  "layers": [
+    {
+      "definition": "entity",
+      "name": "entities",
+      "gridSize": {"x": 16, "y": 16},
+      "exportID": "19485116",
+      "requiredTags": [],
+      "excludedTags": []
+    },
+    {
+      "definition": "tile",
+      "name": "walls",
+      "gridSize": {"x": 32, "y": 32},
+      "exportID": "19486502",
+      "exportMode": 0,
+      "arrayMode": 0,
+      "defaultTileset": ""
+    }
+  ],
+  "entities": [
+    {
+      "exportID": "19483620",
+      "name": "player",
+      "limit": -1,
+      "size": {"x": 100, "y": 100},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#ff0000ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 100, "y": 100},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    },
+    {
+      "exportID": "19717941",
+      "name": "rings",
+      "limit": -1,
+      "size": {"x": 64, "y": 64},
+      "origin": {"x": 0, "y": 0},
+      "originAnchored": true,
+      "shape": {
+        "label": "Rectangle",
+        "points": [
+          {"x": -1, "y": -1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": -1},
+          {"x": -1, "y": 1},
+          {"x": 1, "y": 1}
+        ]
+      },
+      "color": "#face49ff",
+      "tileX": false,
+      "tileY": false,
+      "tileSize": {"x": 64, "y": 64},
+      "resizeableX": false,
+      "resizeableY": false,
+      "rotatable": false,
+      "rotationDegrees": 360,
+      "canFlipX": false,
+      "canFlipY": false,
+      "canSetColor": false,
+      "hasNodes": false,
+      "nodeLimit": 0,
+      "nodeDisplay": 0,
+      "nodeGhost": true,
+      "tags": [],
+      "values": []
+    }
+  ],
+  "tilesets": [
+    {"label": "greenhillzone", "path": "../images/tiles.png", "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAgCAYAAADtwH1UAAAAAXNSR0IArs4c6QAAAZpJREFUaIHtlzFuwjAUhv9UTHAJtkhd6FKJE3Rj6yk6NwPKXDHQo3RolS1DZxYGFiQ2OAIDmSLRoU0VkjhxIK7/Z/ptjmPHeZ/fi+PBMk+fd8eRP8Rqsy315a+P/GHl+Kr+/FyquTP27x9nrbsrbqw+XZOm4KvabeezgQgBgH5wpSFCwGqzpdq1XSJCQIZOFkiTRSOgGLTix7NtYKVIoBDgan3XgUKALrqiJAnt2V5AHUGUnLRniwHwZmkxhrAuIA09TMcHIFpjuRgAAHovRwDAfNIvSciT9c0n/ZM2AMT+dzv265+N+0vf4DKoStB0fDAybxAlSEMPQZT8SqoT+5dQCSjS1Ulm9pNZjFgvQSoeXtfa/Wnolb4NTeNZoMyANPTOGhc/33a8EvNQCmhCyu7WQYyArI4vH3fKeySKESPAVcQJUB1VVZlRlRVMmUIlgPm4aAoqAdeIdQGm/n6lYF2AadjLmvMC2HFCQFbG2Hd7FU4IkMy/AMtcjQDW0xalANZgmYBSQJfUyWQQ7bwAdpwSwLCj2+KUAIl8AWsrgbmSEaQRAAAAAElFTkSuQmCC", "tileWidth": 32, "tileHeight": 32, "tileSeparationX": 0, "tileSeparationY": 0, "tileMarginX": 0, "tileMarginY": 0}
+  ]
+}
